@@ -1,0 +1,164 @@
+{
+  "config_id": "install_artifacts",
+  "version": "1.0.0",
+  "description": "The executables ePy Studio's installer consumes: the studio-built editor apps and the adopted Crafting Apps, so ONE repository carries everything needed to install an ePy Studio bundle.",
+  "audit_status": "verified",
+  "layout": {
+    "apps": "apps/<id>/<id>.exe (+ the shared _internal/ tree)",
+    "crafts": "crafts/<binary>/<binary>.exe (+ <binary>-cli.exe and siblings)"
+  },
+  "apps": [
+    {
+      "id": "epy_reports",
+      "exe": "epy_reports.exe",
+      "component": "reports"
+    },
+    {
+      "id": "epy_slides",
+      "exe": "epy_slides.exe",
+      "component": "slides"
+    },
+    {
+      "id": "epy_papers",
+      "exe": "epy_papers.exe",
+      "component": "papers"
+    },
+    {
+      "id": "epy_draft",
+      "exe": "epy_draft.exe",
+      "component": "craft"
+    },
+    {
+      "id": "epy_quoting",
+      "exe": "epy_quoting.exe",
+      "component": "quoting"
+    },
+    {
+      "id": "epy_outreach",
+      "exe": "epy_outreach.exe",
+      "component": "outreach"
+    }
+  ],
+  "crafts": [
+    {
+      "id": "epy_cadcraft",
+      "binary": "cadcraft",
+      "files": [
+        "cadcraft.exe",
+        "cadcraft-cli.exe"
+      ],
+      "component": "craft_cadcraft",
+      "upstream": "github.com/storytold/cadcraft — MIT OR Apache-2.0"
+    },
+    {
+      "id": "epy_photocraft",
+      "binary": "photocraft",
+      "files": [
+        "photocraft.exe",
+        "photocraft-cli.exe"
+      ],
+      "component": "craft_photocraft",
+      "upstream": "github.com/storytold/photocraft — MIT OR Apache-2.0"
+    },
+    {
+      "id": "epy_lightcraft",
+      "binary": "lightcraft",
+      "files": [
+        "lightcraft.exe",
+        "lightcraft-cli.exe"
+      ],
+      "component": "craft_lightcraft",
+      "upstream": "github.com/storytold/lightcraft — MIT OR Apache-2.0"
+    },
+    {
+      "id": "epy_filmcraft",
+      "binary": "filmcraft",
+      "files": [
+        "filmcraft.exe",
+        "filmcraft-cli.exe"
+      ],
+      "component": "craft_filmcraft",
+      "upstream": "github.com/storytold/filmcraft — MIT OR Apache-2.0"
+    },
+    {
+      "id": "epy_vectorcraft",
+      "binary": "vectorcraft",
+      "files": [
+        "vectorcraft.exe",
+        "vectorcraft-cli.exe"
+      ],
+      "component": "craft_vectorcraft",
+      "upstream": "github.com/storytold/vectorcraft — MIT OR Apache-2.0"
+    },
+    {
+      "id": "epy_pdfcraft",
+      "binary": "pdfcraft",
+      "files": [
+        "pdfcraft.exe",
+        "pdfcraft-cli.exe"
+      ],
+      "component": "craft_pdfcraft",
+      "upstream": "github.com/storytold/pdfcraft — MIT OR Apache-2.0"
+    },
+    {
+      "id": "epy_deckcraft",
+      "binary": "deckcraft",
+      "files": [
+        "deckcraft.exe",
+        "deckcraft-cli.exe"
+      ],
+      "component": "craft_deckcraft",
+      "upstream": "github.com/storytold/deckcraft — MIT OR Apache-2.0"
+    },
+    {
+      "id": "epy_gridcraft",
+      "binary": "gridcraft",
+      "files": [
+        "gridcraft.exe",
+        "gridcraft-cli.exe"
+      ],
+      "component": "craft_gridcraft",
+      "upstream": "github.com/storytold/gridcraft — MIT OR Apache-2.0"
+    },
+    {
+      "id": "epy_soundcraft",
+      "binary": "soundcraft",
+      "files": [
+        "soundcraft.exe",
+        "soundcraft-cli.exe"
+      ],
+      "component": "craft_soundcraft",
+      "upstream": "github.com/storytold/soundcraft — MIT OR Apache-2.0"
+    },
+    {
+      "id": "epy_wordcraft",
+      "binary": "wordcraft",
+      "files": [
+        "wordcraft.exe",
+        "wordcraft-cli.exe"
+      ],
+      "component": "craft_wordcraft",
+      "upstream": "github.com/storytold/wordcraft — MIT OR Apache-2.0"
+    },
+    {
+      "id": "epy_designcraft",
+      "binary": "designcraft",
+      "files": [
+        "designcraft.exe",
+        "designcraft-cli.exe"
+      ],
+      "component": "craft_designcraft",
+      "upstream": "github.com/storytold/designcraft — MIT OR Apache-2.0"
+    },
+    {
+      "id": "epy_effectcraft",
+      "binary": "effectcraft",
+      "files": [
+        "effectcraft.exe",
+        "effectcraft-cli.exe"
+      ],
+      "component": "craft_effectcraft",
+      "upstream": "github.com/storytold/effectcraft — MIT OR Apache-2.0"
+    }
+  ]
+}
