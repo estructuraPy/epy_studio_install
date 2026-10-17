@@ -1,11 +1,12 @@
 {
   "config_id": "install_artifacts",
-  "version": "1.0.0",
-  "description": "The executables ePy Studio's installer consumes: the studio-built editor apps and the adopted Crafting Apps, so ONE repository carries everything needed to install an ePy Studio bundle.",
+  "version": "2.0.0",
+  "description": "The public executables ePy Studio installs. Public and private artifacts live in SEPARATE sites by design.",
   "audit_status": "verified",
+  "site": "public",
   "layout": {
-    "apps": "apps/<id>/<id>.exe (+ the shared _internal/ tree)",
-    "crafts": "crafts/<binary>/<binary>.exe (+ <binary>-cli.exe and siblings)"
+    "apps": "apps/<id>/<id>.exe",
+    "crafts": "crafts/<binary>/<binary>.exe (+ <binary>-cli.exe)"
   },
   "apps": [
     {
@@ -22,21 +23,6 @@
       "id": "epy_papers",
       "exe": "epy_papers.exe",
       "component": "papers"
-    },
-    {
-      "id": "epy_draft",
-      "exe": "epy_draft.exe",
-      "component": "craft"
-    },
-    {
-      "id": "epy_quoting",
-      "exe": "epy_quoting.exe",
-      "component": "quoting"
-    },
-    {
-      "id": "epy_outreach",
-      "exe": "epy_outreach.exe",
-      "component": "outreach"
     }
   ],
   "crafts": [
